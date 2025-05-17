@@ -1,0 +1,25 @@
+
+if SHIELD_TORABO_TSUKI_LEFT || SHIELD_TORABO_TSUKI_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "torabo-tsuki"
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_NON_LIPO_BATTERY_MANAGEMENT
+    default y
+
+config SPI
+    default y
+
+config INPUT
+    default y
+
+config ZMK_MOUSE
+    default y
+
+config PMW3610
+    default y
+ 
+endif

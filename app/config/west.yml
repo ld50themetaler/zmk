@@ -1,0 +1,30 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: zmk-component-ble-micro-pro
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-driver-kscan-74hc164-matrix
+      remote: sekigon-gonnoc
+    - name: zmk-feature-status-led
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-feature-cdc-acm-bootloader-trigger
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-feature-non-lipo-battery-management
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-pmw3610-driver
+      remote: sekigon-gonnoc
+      revision: torabo-tsuki
+  self:
+    path: config

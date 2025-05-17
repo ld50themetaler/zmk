@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zephyrproject-rtos
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
   projects:
     - name: zephyr
       remote: zmkfirmware
@@ -37,5 +39,23 @@ manifest:
       revision: 6cb4c283e76209d59c45fbcb218800cd19e9339d
       path: modules/msgs/zmk-studio-messages
       remote: zmkfirmware
+    - name: zmk-component-ble-micro-pro
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-driver-kscan-74hc164-matrix
+      remote: sekigon-gonnoc
+    - name: zmk-feature-status-led
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-feature-cdc-acm-bootloader-trigger
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-feature-non-lipo-battery-management
+      remote: sekigon-gonnoc
+      revision: main
+    - name: zmk-pmw3610-driver
+      remote: sekigon-gonnoc
+      revision: torabo-tsuki
   self:
     west-commands: scripts/west-commands.yml
+    path: config
